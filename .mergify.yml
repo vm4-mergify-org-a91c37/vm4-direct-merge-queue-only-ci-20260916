@@ -3,6 +3,7 @@ merge_queue:
 queue_rules:
   - name: default
     batch_size: 1
+    max_checks_retries: 1
     queue_conditions:
       - check-success = ci-gate
     merge_conditions:
