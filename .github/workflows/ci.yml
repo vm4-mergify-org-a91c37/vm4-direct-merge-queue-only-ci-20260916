@@ -16,7 +16,6 @@ jobs:
         with:
           action: scopes
           mergify_cli_version: 2026.9.16.1
-          base: ${{ github.event.pull_request.base.sha }}
 
   queue-only-validation:
     needs: detect-scopes
